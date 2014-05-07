@@ -598,10 +598,7 @@ class EasyOptionsPage {
 	     array_push($this->sections, $new_section);
 
 	     // Create a new array where 'section_id' => array(), which will become an array of field arrays
-	     $new_fields = array($section_id => array());
-
-	     // Push that new field to our settings list
-	     $this->settings_fields[] = $new_fields;
+	     $this->settings_fields[ $section_id ] = array();
 
      }
 
